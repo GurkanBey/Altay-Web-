@@ -4,10 +4,10 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 
 ## 📄 İçindekiler
 
-- [Özellikler](#ozellikler)
+- [Özellikler](#özellikler)
 - [Kurulum](#kurulum)
 - [Yedekleme Scripti](#yedekleme-scripti)
-- [Veritabanı Yapısı](#veritabanı-yapısı)
+- [Veritabanı Yapısı](#veritabani-yapisi)
 
 ---
 
@@ -36,7 +36,7 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 ### 2. Klonlama
 
 ```bash
-git clone https://github.com/kullaniciAdi/hasta-kayit-uygulamasi.git
+git clone https://github.com/GurkanBey/Altay-Web-.git
 cd hasta-kayit-uygulamasi
 ````
 
