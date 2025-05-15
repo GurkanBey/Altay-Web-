@@ -1,6 +1,6 @@
 # 🏥 Altay Hasta Kayıt Web Uygulaması
 
-Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve sistem yedekleme işlemlerini gerçekleştirebildiği bir web uygulamasıdır. Proje Python (Flask), MySQL ve Bash script kullanılarak geliştirilmiştir. Uygulama Dockerize edilmiştir ve `docker-compose` ile tek komutla ayağa kaldırılabilir.
+Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve sistem yedekleme işlemlerini gerçekleştirebildiği bir web uygulamasıdır. Proje Php, MySQL ve Bash script kullanılarak geliştirilmiştir. Uygulama Dockerize edilmiştir ve `docker-compose` ile tek komutla ayağa kaldırılabilir.
 
 ## 📄 İçindekiler
 
