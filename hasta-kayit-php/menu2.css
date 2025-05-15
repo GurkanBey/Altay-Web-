@@ -1,0 +1,133 @@
+body {
+  background-color: #191919;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  margin: 60px auto 30px;
+  opacity: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.btn {
+  background: linear-gradient(#fff, #ccc);
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(#eee, #bbb);
+}
+
+.cikis-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f5f5f5;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.cikis-btn:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+.geri-btn{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f5f5f5;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.geri-btn:hover{
+  background-color: #e0e0e0;
+}
+
+
+.kullanici-bilgi {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f5f5f5;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.hesap-btn {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #f5f5f5;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.hesap-btn:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+.hesap-container {
+  position: absolute;
+  top: 20px;
+  right: 230px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profil-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}

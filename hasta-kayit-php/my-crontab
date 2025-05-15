@@ -1,0 +1,2 @@
+0 3 * * 0 root /usr/local/bin/backup.sh 
+#her pazar saat 3'te
