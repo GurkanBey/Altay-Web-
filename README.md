@@ -4,8 +4,8 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 
 ## 📄 İçindekiler
 
-- [Özellikler](#özellikler)
-- [Kurulum](#kurulum)
+- [Özellikler](#Özellikler)
+- [Kurulum](#Kurulum)
 - [Yedekleme Scripti](#yedekleme-scripti)
 - [Veritabanı Yapısı](#veritabanı-yapısı)
 
