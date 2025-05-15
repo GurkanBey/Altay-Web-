@@ -41,7 +41,7 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 
 ```bash
 git clone https://github.com/GurkanBey/Altay-Web-.git
-cd hasta-kayit-uygulamasi
+cd Altay-Web-/hasta-kayit-php/
 ````
 
 ### 3. Uygulamanın Başlatılması
