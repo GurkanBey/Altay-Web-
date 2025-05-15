@@ -47,7 +47,7 @@ cd Altay-Web-/hasta-kayit-php/
 ### 3. Uygulamanın Başlatılması
 
 ```bash
-docker-compose up --build
+docker-compose up --build -d
 ```
 
 * Web uygulamasına [http://localhost:8080/login.php](http://localhost:8080/login.php) adresinden ulaşabilirsiniz.
