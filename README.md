@@ -60,6 +60,7 @@ docker-compose up --build
   * Veritabanının yedeğini alır.
   * Yedekleme tarihi, saati, dosya adı ve boyutunu `/var/log/backup.log` dosyasına kaydeder.
   * Yedeklemenin başarılı olup olmadığına göre mesaj döndürür.
+  * Ayrıca her pazar saat 3'te crontab ile otomatik yedek alır.
 
 ---
 
