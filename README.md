@@ -11,7 +11,7 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 
 ---
 
-# ✅ Özellikler
+##Özellikler
 
 - Kullanıcı Kayıt ve Giriş Sistemi (Register & Login)
 - Hasta Bilgileri Kayıt Paneli (Dashboard)
@@ -26,7 +26,7 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 
 ---
 
-# 🐳 Kurulum
+##Kurulum
 
 ### 1. Gereksinimler
 
@@ -50,7 +50,7 @@ docker-compose up --build
 
 ---
 
-# ⏸ Yedekleme Scripti
+##Yedekleme Scripti
 
 ### backup.sh
 
