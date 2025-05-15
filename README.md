@@ -1,3 +1,6 @@
+
+
+````markdown
 # 🏥 Altay Hasta Kayıt Web Uygulaması
 
 Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve sistem yedekleme işlemlerini gerçekleştirebildiği bir web uygulamasıdır. Proje Python (Flask), MySQL ve Bash script kullanılarak geliştirilmiştir. Uygulama Dockerize edilmiştir ve `docker-compose` ile tek komutla ayağa kaldırılabilir.
@@ -8,7 +11,6 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 - [Kurulum](#kurulum)
 - [Yedekleme Scripti](#yedekleme-scripti)
 - [Veritabanı Yapısı](#veritabanı-yapısı)
-
 
 ---
 
@@ -36,44 +38,54 @@ Bu proje, hastane personelinin kullanıcı kaydı, hasta girişlerinin takibi ve
 
 ### 2. Klonlama
 
-
+```bash
 git clone https://github.com/kullaniciAdi/hasta-kayit-uygulamasi.git
 cd hasta-kayit-uygulamasi
+````
 
-### 3.Uygulamanın Başlatılması
+### 3. Uygulamanın Başlatılması
 
-
+```bash
 docker-compose up --build
+```
 
-- Web uygulamasına http://localhost:8080/login.php adresinden ulaşabilirsiniz.
+* Web uygulamasına [http://localhost:8080/login.php](http://localhost:8080/login.php) adresinden ulaşabilirsiniz.
 
-
+---
 
 ## ⏸ Yedekleme Scripti
 
-### backup.sh 
+### backup.sh
 
-- Proje içinde backup.sh adında bir Bash script bulunmaktadır. 
-- Bu script:Veritabanının yedeğini alır.
-- Yedekleme tarihi, saati, dosya adı ve boyutunu /var/log/backup.log dosyasına kaydeder.
-- Yedeklemenin başarılı olup olmadığına göre mesaj döndürür.
+* Proje içinde `backup.sh` adında bir Bash script bulunmaktadır.
+* Bu script:
 
+  * Veritabanının yedeğini alır.
+  * Yedekleme tarihi, saati, dosya adı ve boyutunu `/var/log/backup.log` dosyasına kaydeder.
+  * Yedeklemenin başarılı olup olmadığına göre mesaj döndürür.
+
+---
 
 ## 🔄 Veritabanı Yapısı
 
-### 🗄️ Veritabanı Yapısı (hasta_kayit)
-- Bu projede kullanılan MySQL veritabanı hasta_kayit adını taşır ve iki ana tablodan oluşur: users ve hastalar.
+### 🗄️ Veritabanı: `hasta_kayit`
 
+Bu projede kullanılan MySQL veritabanı `hasta_kayit` adını taşır ve iki ana tablodan oluşur: `users` ve `hastalar`.
+
+```
 +-----------------------+
 | Tables_in_hasta_kayit |
 +-----------------------+
 | hastalar              |
 | users                 |
 +-----------------------+
+```
 
-### 📁 Tablo: users
-- Hastane personelinin kullanıcı bilgilerini tutar. Giriş (login) işlemleri bu tablo üzerinden yapılır.
+### 📁 Tablo: `users`
 
+Hastane personelinin kullanıcı bilgilerini tutar. Giriş (login) işlemleri bu tablo üzerinden yapılır.
+
+```
 +-----------+--------------+------+-----+---------+----------------+
 | Field     | Type         | Null | Key | Default | Extra          |
 +-----------+--------------+------+-----+---------+----------------+
@@ -85,9 +97,13 @@ docker-compose up --build
 | bolum     | varchar(100) | YES  |     | NULL    |                |
 | sikayet   | text         | YES  |     | NULL    |                |
 +-----------+--------------+------+-----+---------+----------------+
+```
 
-### 📁 Tablo: hastalar
-- Hastaneye gelen hastaların kayıt bilgilerini tutar. Dashboard üzerinden erişilir ve doldurulur.
+### 📁 Tablo: `hastalar`
+
+Hastaneye gelen hastaların kayıt bilgilerini tutar. Dashboard üzerinden erişilir ve doldurulur.
+
+```
 +----------+--------------+------+-----+---------+----------------+
 | Field    | Type         | Null | Key | Default | Extra          |
 +----------+--------------+------+-----+---------+----------------+
@@ -96,6 +112,8 @@ docker-compose up --build
 | password | varchar(255) | NO   |     | NULL    |                |
 | photo    | varchar(255) | YES  |     | NULL    |                |
 +----------+--------------+------+-----+---------+----------------+
+```
+
 
 
 
